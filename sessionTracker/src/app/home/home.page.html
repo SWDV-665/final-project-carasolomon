@@ -1,14 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			Session Tracker
+		</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+	<div class="ion-padding">
+		<p>This app allows counselors and social workers to log their hours for licensure. To begin, enter your information below
+			and click the start button.</p>
+		<ion-item>
+			<ion-label>Name:</ion-label>
+			<ion-input placeholder="Your first & last name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Title:</ion-label>
+			<ion-input placeholder="(I.e. LCSW, PLPC, etc)"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Hours for License:</ion-label>
+			<ion-input placeholder="3000"></ion-input>
+		</ion-item>
+
+		<div class="ion-padding">
+			<ion-button expand="block" type="submit" class="ion-no-margin">Start</ion-button>
+		</div>
+        <div class="ion-padding">
+			<ion-button expand="block" type="reset" class="ion-no-margin">Clear</ion-button>
+		</div>
+	</div>
 </ion-content>
