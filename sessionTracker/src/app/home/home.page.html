@@ -12,15 +12,15 @@
 			and click the start button.</p>
 		<ion-item>
 			<ion-label>Name:</ion-label>
-			<ion-input placeholder="Your first & last name"></ion-input>
+			<ion-input placeholder="Your first & last name" [(ngModel)]="name"></ion-input>
 		</ion-item>
 		<ion-item>
 			<ion-label>Title:</ion-label>
-			<ion-input placeholder="(I.e. LCSW, PLPC, etc)"></ion-input>
+			<ion-input placeholder="(I.e. LCSW, PLPC, etc)" [(ngModel)]="workTitle"></ion-input>
 		</ion-item>
 		<ion-item>
 			<ion-label>Hours for License:</ion-label>
-			<ion-input placeholder="3000"></ion-input>
+			<ion-input placeholder="3000" [(ngModel)]="hoursNeeded"></ion-input>
 		</ion-item>
 
 		<div class="ion-padding">
@@ -29,5 +29,6 @@
         <div class="ion-padding">
 			<ion-button expand="block" type="reset" class="ion-no-margin">Clear</ion-button>
 		</div>
-	</div>
+  </div>
+  
 </ion-content>
