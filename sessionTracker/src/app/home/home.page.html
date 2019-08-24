@@ -10,25 +10,29 @@
 	<div class="ion-padding">
 		<p>This app allows counselors and social workers to log their hours for licensure. To begin, enter your information below
 			and click the start button.</p>
-		<ion-item>
-			<ion-label>Name:</ion-label>
-			<ion-input placeholder="Your first & last name" [(ngModel)]="name"></ion-input>
-		</ion-item>
-		<ion-item>
-			<ion-label>Title:</ion-label>
-			<ion-input placeholder="(I.e. LCSW, PLPC, etc)" [(ngModel)]="workTitle"></ion-input>
-		</ion-item>
-		<ion-item>
-			<ion-label>Hours for License:</ion-label>
-			<ion-input placeholder="3000" [(ngModel)]="hoursNeeded"></ion-input>
-		</ion-item>
-
-		<div class="ion-padding">
-			<ion-button expand="block" type="submit" class="ion-no-margin">Start</ion-button>
-		</div>
-        <div class="ion-padding">
-			<ion-button expand="block" type="reset" class="ion-no-margin">Clear</ion-button>
-		</div>
+      <!--add user info here-->
+      <ion-item>
+        <ion-label>Name:</ion-label>
+        <ion-input placeholder="Your first & last name" [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Title:</ion-label>
+        <ion-input placeholder="(I.e. LCSW, PLPC, etc)" [(ngModel)]="workTitle"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hours for License:</ion-label>
+        <ion-input placeholder="3000" [(ngModel)]="hoursNeeded"></ion-input>
+      </ion-item>
+    
+      <div class="ion-padding">
+        <!-- link hours.ts to form -->
+        <ion-button expand="block" type="submit">Start</ion-button>
+      </div>
+          <div class="ion-padding">
+            <!-- clear form -->
+        <ion-button expand="block" type="reset">Clear</ion-button>
+      </div>
+     
   </div>
   
 </ion-content>
